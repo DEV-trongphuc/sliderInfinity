@@ -50,15 +50,14 @@ html {
 .slider__image::-webkit-scrollbar {
   display: none;
 }
-.img__item {
+.slider__item {
   width: 100%;
   height: 100%;
   overflow-x: auto;
   object-fit: fill;
   position: relative;
   left: 0;
-    transition: 0.5s ease-out;
-
+  transition: 0.5s ease-out;
 }
 .slider__button {
   position: absolute;
