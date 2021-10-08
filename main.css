@@ -66,6 +66,7 @@ html {
   align-items: center;
   width: 100%;
   height: 100%;
+  z-index: 0;
 }
 .next__btn,
 .prev__btn {
@@ -80,4 +81,29 @@ html {
 }
 button:active {
   background-color: rgb(92, 92, 92);
+}
+.slider__dots {
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 999999;
+}
+.dot__item {
+  background-color: rgba(255, 255, 255, 0.466);
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  font-size: 5rem;
+  cursor: pointer;
+  transition: 0.35s ease-in-out;
+}
+.dot__item.active {
+  background-color: rgb(255, 255, 255);
 }
