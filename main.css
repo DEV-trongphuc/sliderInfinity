@@ -34,6 +34,13 @@ html {
   border-radius: 15px;
   overflow: hidden;
 }
+@media screen and (max-width: 504px) {
+  .slider__container {
+    width: 80%;
+    height: 90%;
+  }
+}
+
 .slider__image {
   position: absolute;
   width: 100%;
