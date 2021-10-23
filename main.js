@@ -23,3 +23,5 @@ $(".dot__item").forEach((dot, index) => {
     images.forEach((image) => (image.style.left = -index * 100 + "%"));
   };
 });
+
+setInterval(()=> {$(".next__btn")[0].click() },8000)
