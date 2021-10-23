@@ -9,7 +9,7 @@ $(".next__btn")[0].onclick = () => {
   $(".dot__item")[-i].classList.add("active");
 };
 $(".prev__btn")[0].onclick = () => {
-  let i = Math.floor(images[0].offsetLeft / images[0].offsetWidth);
+  let i = Math.ceil(images[0].offsetLeft / images[0].offsetWidth);
   if (i === 0) i = -images.length;
   i = i + 1;
   images.forEach((image) => (image.style.left = i * 100 + "%"));
