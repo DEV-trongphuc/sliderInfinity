@@ -24,4 +24,5 @@ $(".dot__item").forEach((dot, index) => {
   };
 });
 
+// Auto slider 8s //
 setInterval(()=> {$(".next__btn")[0].click() },8000)
